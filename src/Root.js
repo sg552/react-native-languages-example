@@ -2,21 +2,12 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import i18n from './i18n';
 
-console.log("== i18n.currentLocale()")
-console.log(i18n.currentLocale())
-
 class Root extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{i18n.t('title')}</Text>
 
-        <Text style={styles.line}>
-          {i18n.t('current', { language: 'de' })}
-        </Text>
-        <Text style={styles.line}>
-          {i18n.t('current', { language: 'fr' })}
-        </Text>
         <Text style={styles.line}>
           {i18n.t('current', { language: i18n.currentLocale() })}
         </Text>
