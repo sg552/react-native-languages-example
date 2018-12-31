@@ -1,4 +1,4 @@
-package com.i18nexample;
+package com.rnlanguagesexample;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "I18nExample";
+        return "RNLanguagesExample";
     }
 }
